@@ -1,4 +1,4 @@
-{
+{  
   "homepage": "https://safr0.github.io/react-demo",
   "name": "meeting-room-booking-system",
   "version": "0.1.0",
@@ -21,11 +21,11 @@
   },
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "set NODE_OPTIONS=--openssl-legacy-provider npm run build",
-    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider gh-pages -d build"
+    "predeploy": "set NODE_OPTIONS=--openssl-legacy-provider && npm run build",
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
