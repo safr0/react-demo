@@ -3,8 +3,9 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      #- main  # Trigger deployment on push to the main branch
-      - frontend-app-refactoring
+      ###- main  # Trigger deployment on push to the main branch
+      ###- frontend-app-refactoring
+      - frontend-app-refactoring  # Trigger deployment on push to the frontend-app-refactoring branch
 
 jobs:
   build-and-deploy:
